@@ -2,9 +2,9 @@
 
 ![database](./../assets/database.jpg)
 
-*最后一次更新于: Saturday, April 17, 2021 (GMT+8)*
+*最后一次更新于: Saturday, April 18, 2021 (GMT+8)*
 
-参考资料: [MySQLTUTORIAL](mysqltutorial.org/)
+参考资料: [MySQLTUTORIAL](https://mysqltutorial.org/)
 
 
 

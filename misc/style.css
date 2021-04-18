@@ -1,0 +1,22 @@
+body {
+	background-color: rgb(40, 42, 54);
+  }
+  h1, p, a, li {
+	color: rgb(255, 255, 255);
+  }
+
+  h1 {
+    font-size: xx-large;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  li {
+    list-style: none;
+    height: 1cm;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:large;
+  }
+  #clock {
+    width:auto;
+    height:80px;
+    border: 0ch;
+  }
