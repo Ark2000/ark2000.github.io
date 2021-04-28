@@ -3,6 +3,11 @@
   src: url('../assets/fonts/BAD_GRUNGE.ttf');
 }
 
+@font-face {
+  font-family: 'TypeWriter';
+  src: url('../assets/fonts/JMH\ Typewriter-Thin.otf');
+}
+
 body {
 	background-color: rgb(40, 42, 54);
 }
@@ -13,7 +18,7 @@ footer {
 
 h1, p, a, li {
   color: rgb(255, 255, 255);
-  font-family:Georgia, serif;
+  font-family:'TypeWriter';
   text-decoration: none;
 }
 
@@ -28,12 +33,7 @@ p, a {
 li {
   list-style: none;
   height: 1cm;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size:large;
-}
-
-#time {
-  font-family: 'Courier New', Courier, monospace;
 }
 
 tbody tr:nth-child(odd) {
@@ -71,10 +71,10 @@ a:hover {
 .tag {
   padding: 0.8vw;
   margin: 0.2vw;
+  font-family: 'TypeWriter';
   background-color: #cc3355;
   border-radius:0.8vw;
   color: white;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 1.5vw;
 }
 

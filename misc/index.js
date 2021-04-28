@@ -4,9 +4,13 @@ function clock() {
     var Time = (new Date()).toUTCString();
 	//降低刷新率, 60Hz太鬼畜了
 	if (lastTime != Time) {
-		document.getElementById("time").innerHTML = "Local Time: " + Time
+		$("#time").html("Local Time: " + Time);
 	}
 	lastTime = Time;
 	requestAnimationFrame(clock)
 }
-requestAnimationFrame(clock)
+
+//a good practice
+$(function() {
+	requestAnimationFrame(clock);
+});
