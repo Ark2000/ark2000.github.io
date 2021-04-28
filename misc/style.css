@@ -8,7 +8,7 @@ footer {
 
 h1, p, a, li {
   color: rgb(255, 255, 255);
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:Georgia, serif;
   text-decoration: none;
 }
 
@@ -45,10 +45,39 @@ tbody tr:nth-child(even) {
 }
 
 td {
-  text-align: center;
+  padding-left: 2vw;
+  text-align: left;
 }
 
 table {
   background-color: #191a21;
   width:80vw;
+}
+
+a {
+  text-decoration:none;
+}
+
+a:hover {
+  color:#cc3355;
+}
+
+#article-region {
+  width: 80vw;
+  height: 920px;
+  border-color: #282a36;
+}
+
+.tag {
+  padding: 8px;
+  margin: 2px;
+  background-color: #cc3355;
+  border-radius:8px;
+  color: white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.5vw;
+}
+
+.tag:hover {
+  background-color:tomato;
 }
