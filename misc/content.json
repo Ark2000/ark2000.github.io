@@ -4,43 +4,68 @@
 			"title": "Godot Memory Leak",
 			"date": "2021-04-28",
 			"link": "./articles/godot_memory_leak.html",
+			"desc": "Bothered by the <i>Circular Dependency</i> in Godot? Then you should have some basic knowledge about how it works.",
 			"tags": ["GameDev"]
 		},
 		{
 			"title": "MySQL Notes 04",
-			"date": "2021-4-26",
+			"date": "2021-04-26",
+			"desc": "This shall be the last one.",
 			"link": "./articles/mysql_notes4.html",
 			"tags": ["DataBase", "Clutter"]
 		},
 		{
 			"title": "MySQL Notes 03",
-			"date": "2021-4-26",
+			"date": "2021-04-26",
 			"link": "./articles/mysql_notes3.html",
 			"tags": ["DataBase"]
 		},
 		{
 			"title": "Game AI Kinematics Demo",
-			"date": "2021-4-25",
+			"date": "2021-04-25",
 			"link": "https://k2kra.xyz/ai_kinematics_demo/",
-			"tags": ["GameDev"]
+			"tags": ["GameDev"],
+			"desc": "A web based program demonstrating some basic steering behaviors. Mobile incompatible."
+		},
+		{
+			"title": "Navigation",
+			"desc": "Some websites I found interesting.",
+			"date": "2021-04-25",
+			"link": "./articles/navigation.html",
+			"tags": ["Meta"]
 		},
 		{
 			"title": "Oracle PTSD",
-			"date": "2021-4-20",
+			"desc": "Painful experience.",
+			"date": "2021-04-20",
 			"link": "./articles/oracle_ptsd.html",
 			"tags": ["Clutter"]
 		},
 		{
 			"title": "MySQL Notes 02",
-			"date": "2021-4-18",
+			"date": "2021-04-18",
 			"link": "./articles/mysql_notes2.html",
 			"tags": ["DataBase"]
 		},
 		{
 			"title": "MySQL Notes 01",
-			"date": "2021-4-17",
+			"date": "2021-04-17",
 			"link": "./articles/mysql_notes1.html",
 			"tags": ["DataBase"]
+		},
+		{
+			"title": "About Me",
+			"desc": "Let's dreaming.",
+			"date": "2021-04-17",
+			"link": "./articles/aboutme.html",
+			"tags": ["Meta"]
+		},
+		{
+			"title": "About Site",
+			"desc": "K2kra Reservation.",
+			"date": "2021-04-17",
+			"link": "./articles/hello.html",
+			"tags": ["Meta"]
 		}
 	]
 }

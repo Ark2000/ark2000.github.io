@@ -105,3 +105,9 @@ h2 {
 .idate p {
   font-size: 2vw;
 }
+
+.idesc {
+  margin: 2vw;
+  text-align: left;
+  font-size: 2vw;
+}

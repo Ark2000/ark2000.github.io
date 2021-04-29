@@ -21,8 +21,9 @@ function generate(data) {
 		}
 		let html =
 		'<li class="item">' +
-        '<a href="'+a[i].link+'" class="ititle" target="_blank">>'+a[i].title+'</a>' +
-        '<div class="itags">' + tags +
+        '<a href="'+a[i].link+'" class="ititle" target="_blank">> '+a[i].title+'</a>' +
+        '<p class="idesc">'+ (a[i].desc ? a[i].desc : '') +'</p>' +
+		'<div class="itags">' + tags +
         '</div>' +
         '<div class="idate">' +
           '<p>📅 '+a[i].date+'</p>' +
