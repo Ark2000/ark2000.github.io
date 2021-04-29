@@ -16,42 +16,14 @@ footer {
   background-color: rgb(52, 55, 70);
 }
 
-h1, p, a, li {
+p, a, li, h2 {
   color: rgb(255, 255, 255);
   font-family:'TypeWriter';
   text-decoration: none;
 }
 
-p, a {
-  font-size: 2vw;
-}
-
 #banner {
   background-color: #cc3355;
-}
-
-li {
-  list-style: none;
-  height: 1cm;
-  font-size:large;
-}
-
-tbody tr:nth-child(odd) {
-  background-color: #343746;
-}
-
-tbody tr:nth-child(even) {
-  background-color: #21222c;
-}
-
-td {
-  padding-left: 2vw;
-  text-align: left;
-}
-
-table {
-  background-color: #191a21;
-  width:80vw;
 }
 
 a {
@@ -62,12 +34,6 @@ a:hover {
   color:#cc3355;
 }
 
-#article-region {
-  width: 80vw;
-  height: 920px;
-  border-color: #282a36;
-}
-
 .tag {
   padding: 0.8vw;
   margin: 0.2vw;
@@ -75,17 +41,67 @@ a:hover {
   background-color: #cc3355;
   border-radius:0.8vw;
   color: white;
-  font-size: 1.5vw;
+  font-size: 2.0vw;
 }
 
 .tag:hover {
-  background-color:tomato;
+  background-color:whitesmoke;
 }
 
 .banner-text {
   font-family: 'Reservation';
-  font-size: 6vw;
+  font-size: 8vw;
   font-weight:lighter;
   font-stretch: expanded;
   letter-spacing: 0.8vw;
+  color: white;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  border-left: 1vw solid #cc3355;
+  list-style: none;
+  margin-top: 3vw;
+}
+
+h2 {
+  margin: 2vw;
+}
+
+.item {
+  width: 80vw;
+  height: auto;
+  background-color: #343746;
+  box-shadow: 0vw 1vw 0px #21222c;
+  padding: 1vw;
+}
+
+.ititle {
+  display: block;
+  text-align: left;
+  font-size: 3vw;
+  margin: 2vw;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.itags {
+  border-style: solid;
+  border-color: transparent;
+  text-align: left;
+  margin: 2vw;
+}
+
+.idate {
+  text-align: left;
+  margin: 2vw;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.idate p {
+  font-size: 2vw;
 }

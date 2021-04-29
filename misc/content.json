@@ -1,0 +1,46 @@
+{
+	"articles": [
+		{
+			"title": "Godot Memory Leak",
+			"date": "2021-04-28",
+			"link": "./articles/godot_memory_leak.html",
+			"tags": ["GameDev"]
+		},
+		{
+			"title": "MySQL Notes 04",
+			"date": "2021-4-26",
+			"link": "./articles/mysql_notes4.html",
+			"tags": ["DataBase", "Clutter"]
+		},
+		{
+			"title": "MySQL Notes 03",
+			"date": "2021-4-26",
+			"link": "./articles/mysql_notes3.html",
+			"tags": ["DataBase"]
+		},
+		{
+			"title": "Game AI Kinematics Demo",
+			"date": "2021-4-25",
+			"link": "https://k2kra.xyz/ai_kinematics_demo/",
+			"tags": ["GameDev"]
+		},
+		{
+			"title": "Oracle PTSD",
+			"date": "2021-4-20",
+			"link": "./articles/oracle_ptsd.html",
+			"tags": ["Clutter"]
+		},
+		{
+			"title": "MySQL Notes 02",
+			"date": "2021-4-18",
+			"link": "./articles/mysql_notes2.html",
+			"tags": ["DataBase"]
+		},
+		{
+			"title": "MySQL Notes 01",
+			"date": "2021-4-17",
+			"link": "./articles/mysql_notes1.html",
+			"tags": ["DataBase"]
+		}
+	]
+}
