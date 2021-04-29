@@ -3,7 +3,8 @@ let lastTime
 function clock() {
     let Time = (new Date()).toUTCString();
 	if (lastTime != Time) {
-		$("#time").html("Local Time: " + Time);
+		$("#time").html("Local Time : " + Time);
+		$("#stat").html("Visit Statistics : " + $('#busuanzi_value_site_pv').text());
 	}
 	lastTime = Time;
 	requestAnimationFrame(clock)
@@ -61,8 +62,11 @@ function setUpEffect() {
 //a good practice，设定document的onready事件回调
 $(function() {
 	requestAnimationFrame(clock);
+
+	$('#busuanzi_value_site_pv').hide();
+
 	$.getJSON("./misc/content.json", function() {
-	}).done(function(data, status, xhr) {
+	}).done(function(data) {
 		generate(data);
 		setUpEffect();
 	}).fail(function() {
