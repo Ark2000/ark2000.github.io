@@ -69,6 +69,7 @@ li {
 
 h2 {
   margin: 2vw;
+  font-size: 4vw;
 }
 
 .item {
@@ -109,5 +110,10 @@ h2 {
 .idesc {
   margin: 2vw;
   text-align: left;
+  font-size: 2vw;
+}
+
+.text2 {
+  font-family: 'TypeWriter';
   font-size: 2vw;
 }

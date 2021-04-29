@@ -36,12 +36,13 @@ function generate(data) {
 
 //玩一些动画效果
 function setUpEffect() {
-	$('.item').mouseenter(function(e){
-		$(this).animate({width: '82vw'}, 100);
-	});
-	$('.item').mouseleave(function(e){
-		$(this).animate({width: '80vw'}, 100);
-	});
+	//手机上有bug
+	// $('.item').mouseenter(function(e){
+	// 	$(this).animate({width: '82vw'}, 100);
+	// });
+	// $('.item').mouseleave(function(e){
+	// 	$(this).animate({width: '80vw'}, 100);
+	// });
 
 	//开场动画，逐个出现
 	const interval = 200;
