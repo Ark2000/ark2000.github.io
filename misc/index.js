@@ -26,31 +26,23 @@ function generate(data) {
 		'<div class="itags">' + tags +
         '</div>' +
         '<div class="idate">' +
-          '<p>📅 '+a[i].date+'</p>' +
+          '<span class="text3">📅 Create: '+ a[i].date1 +'</span>' +
+		  '<span class="text3">📅 Update: '+ (a[i].date2 ? a[i].date2 : a[i].date1) +'</span>' +
+		  '<span class="text3">⌛ Length: '+ (a[i].length ? a[i].length : '?') +'</span>' +
         '</div>' +
       	'</li>';
-		console.log(i);
 		li.html(li.html() + html);
 	}
 }
 
 //玩一些动画效果
 function setUpEffect() {
-	//手机上有bug
-	// $('.item').mouseenter(function(e){
-	// 	$(this).animate({width: '82vw'}, 100);
-	// });
-	// $('.item').mouseleave(function(e){
-	// 	$(this).animate({width: '80vw'}, 100);
-	// });
-
 	//开场动画，逐个出现
-	const interval = 200;
+	const interval = 400;
 
-	//构造闭包函数
 	function makeCallBack(ele) {
 		return function() {
-			ele.slideDown(interval);
+			ele.show(interval);
 		};
 	}
 	$('.item').hide();
@@ -71,7 +63,13 @@ $(function() {
 	}).done(function(data) {
 		generate(data);
 		setUpEffect();
+		$(".tag").click(function(e) {
+			e.preventDefault();
+			alert("Under construction...");
+		});
 	}).fail(function() {
 		alert("unknown error! stupid coder!");
 	})
+
+	console.log("No secret here, don't event think about it.");
 });
