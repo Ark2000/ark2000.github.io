@@ -35,13 +35,13 @@ a:hover {
 }
 
 .tag {
-  padding: 0.8vw;
-  margin-right: 0.8vw;
+  padding: 0.8vmin;
+  margin-right: 0.8vmin;
   font-family: 'TypeWriter';
   background-color: #cc3355;
-  border-radius:0.8vw;
+  border-radius:0.8vmin;
   color: white;
-  font-size: 2.0vw;
+  font-size: 2.0vmin;
 }
 
 .tag:hover {
@@ -50,10 +50,10 @@ a:hover {
 
 .banner-text {
   font-family: 'Reservation';
-  font-size: 8vw;
+  font-size: 8vmin;
   font-weight:lighter;
   font-stretch: expanded;
-  letter-spacing: 0.8vw;
+  letter-spacing: 0.8vmin;
   color: white;
 }
 
@@ -62,29 +62,29 @@ ul {
 }
 
 li {
-  border-left: 1vw solid #cc3355;
+  border-left: 1vmin solid #cc3355;
   list-style: none;
-  margin-top: 3vw;
+  margin-top: 3vmin;
 }
 
 h2 {
-  margin: 2vw;
-  font-size: 4vw;
+  margin: 2vmin;
+  font-size: 4vmin;
 }
 
 .item {
-  width: 80vw;
+  width: 80vmin;
   height: auto;
   background-color: #343746;
-  box-shadow: 0vw 1vw 0px #21222c;
-  padding: 1vw;
+  box-shadow: 0vmin 1vmin 0px #21222c;
+  padding: 1vmin;
 }
 
 .ititle {
   display: block;
   text-align: left;
-  font-size: 3vw;
-  margin: 2vw;
+  font-size: 3vmin;
+  margin: 2vmin;
   border-style: solid;
   border-color: transparent;
 }
@@ -93,29 +93,30 @@ h2 {
   border-style: solid;
   border-color: transparent;
   text-align: left;
-  margin: 2vw;
+  margin: 2vmin;
 }
 
 .idate {
   text-align: left;
-  margin: 2vw;
+  margin: 2vmin;
   border-style: solid;
   border-color: transparent;
 }
 
 .idesc {
-  margin: 2vw;
+  margin: 2vmin;
   text-align: left;
-  font-size: 2vw;
+  font-size: 2vmin;
 }
 
 .text2 {
   font-family: 'TypeWriter';
-  font-size: 2vw;
+  font-size: 2vmin;
 }
 
 .text3 {
   font-family: 'TypeWriter';
-  font-size: 2vw;
-  margin-right: 4vw;
+  font-size: 2vmin;
+  margin-right: 4vmin;
 }
+
