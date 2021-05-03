@@ -21,7 +21,7 @@ function generate(data) {
 		}
 		let html =
 		'<li class="item">' +
-        '<a href="'+a[i].link+'" class="ititle" target="_blank">> '+a[i].title+'</a>' +
+        '<a href="'+a[i].link+'" class="ititle" '+ (a[i].new_tab ? 'target="_blank"':'') +'>> '+a[i].title+'</a>' +
         '<p class="idesc">'+ (a[i].desc ? a[i].desc : '') +'</p>' +
 		'<div class="itags">' + tags +
         '</div>' +
@@ -38,7 +38,7 @@ function generate(data) {
 //玩一些动画效果
 function setUpEffect() {
 	//开场动画，逐个出现
-	const interval = 400;
+	const interval = 200;
 
 	function makeCallBack(ele) {
 		return function() {

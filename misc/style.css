@@ -112,6 +112,7 @@ h2 {
 .text2 {
   font-family: 'TypeWriter';
   font-size: 2vmin;
+  margin: 1vmin 1vmin 0 0;
 }
 
 .text3 {
@@ -120,3 +121,7 @@ h2 {
   margin-right: 4vmin;
 }
 
+.text4 {
+  font-family: 'TypeWriter';
+  font-size: 2vmin;
+}
