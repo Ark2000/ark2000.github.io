@@ -1,6 +1,14 @@
 {
 	"articles": [
 		{
+			"title": "Approach of Path Follow",
+			"date1": "2021-05-09",
+			"link": "https://www.notion.so/Approach-of-Path-Follow-ba2f25e647de427bba8f02c6b5ce2e28",
+			"desc": "Simple tutorial on how to implement path follow.",
+			"tags": ["GameDev"],
+			"length": 1215
+		},
+		{
 			"title": "Notion Blog Posting Test",
 			"date1": "2021-05-03",
 			"link": "https://www.notion.so/Blog-Post-f51d0cff6684461595861ff066a2eb06",

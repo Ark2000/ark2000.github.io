@@ -4,7 +4,7 @@ function clock() {
     let Time = (new Date()).toUTCString();
 	if (lastTime != Time) {
 		$("#time").html("Local Time : " + Time);
-		$("#stat").html("Visit Statistics : " + $('#busuanzi_value_site_pv').text());
+		$("#stat").html("Visit Statistics : <b class='text5'>" + $('#busuanzi_value_site_pv').text() + "</b>");
 	}
 	lastTime = Time;
 	requestAnimationFrame(clock)
