@@ -1,6 +1,14 @@
 {
 	"articles": [
 		{
+			"title": "[01] Top Down Shooter Game Dev Log",
+			"date1": "2021-05-19",
+			"link": "https://www.notion.so/01-Top-Down-Shooter-Game-Dev-Log-0467b39fc80a4bb7850210bd79e3dd98",
+			"desc": "Game dev log.",
+			"tags": ["GameDev"],
+			"length": 667
+		},
+		{
 			"title": "Approach of Path Follow",
 			"date1": "2021-05-09",
 			"date2": "2020-05-13",
