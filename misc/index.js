@@ -62,7 +62,7 @@ $(function() {
 	$.getJSON("./misc/content.json", function() {
 	}).done(function(data) {
 		generate(data);
-		setUpEffect();
+		// setUpEffect();
 		$(".tag").click(function(e) {
 			e.preventDefault();
 			alert("Under construction...");
