@@ -1,151 +1,80 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
-
-* {
-  box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Montserrat:wght@600;900&display=swap');
 
 body {
-  margin: 0;
-  font-weight: 500;
-  font-family: "HelveticaNeue";
-}
-
-section {
-  width: 100%;
-  padding: 0 7%;
-  display: table;
-  margin: 0;
-  max-width: none;
-  background-color: #373B44;
-  height: 100vh;
-}
-section:nth-of-type(2n) {
-  background-color: #FE4B74;
-}
-
-.intro {
-  height: 90vh;
-}
-
-.content {
-  display: table-cell;
+    background-color: #373b44;
+    height: 90vh;
+    font-size: 100%;
 }
 
 h1 {
-  font-size: 3em;
-  display: block;
-  color: white;
-  font-weight: 900;
-	font-family: 'Montserrat', sans-serif;
-  text-align: center;
+    color: whitesmoke;
+    font-size: 5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    margin-bottom: 0;
+    margin-top:0;
 }
 
-p {
-  font-size: 2.0em;
-  font-weight: 500;
-  color: #C3CAD9;
-}
-
-a {
-  font-weight: 700;
-  color: #373B44;
-  position: relative;
-  text-decoration: none;
-}
-a:hover {
-  opacity: 0.8;
-}
-a:active {
-  top: 1px;
+.subtitle {
+    color: whitesmoke;
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 footer {
-  padding: 1% 5%;
-  text-align: left;
-  background-color: #FE4B74;
-  color: white;
-  font-family: 'IBM Plex Mono', monospace;
-}
-footer a {
-  color: #FE4B74;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-#icons {
-  text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #2D3139;
+    color: white;
+    text-align: left;
+    color: whitesmoke;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1em;
 }
 
-#main-nav {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 1rem;
-  background-color: #373B44;
-}
-#main-nav ul {
-  display: flex;
-}
-#main-nav li {
-  padding: 1rem 1.5rem;
-}
-#main-nav a {
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
-  border-bottom: 3px transparent solid;
-  padding-bottom: 0.5rem;
-  transition: border-color 0.5s;
-}
-#main-nav a:hover {
-  border-color: #ccc;
-}
-#main-nav a.current {
-  border-color: #ffbc00;
+.highlight {
+    color: #FE4B74;
 }
 
-#logo {
-  width: 204px;
-  height: 60px;
-  color: #fff;
-  text-transform: uppercase;
+.main-block {
+    text-align: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-#header-home {
-  color: #ffbc00;
-}
-#header-home .header-content {
-  text-align: center;
-  padding-top: 20%;
-}
-#header-home .header-content h1 {
-  font-size: 3rem;
-  line-height: 1.2;
+a:hover {
+    opacity: 0.8;
 }
 
-#header-home .header-content h3 {
-  font-size: 2rem;
-  line-height: 1.2;
-  padding-bottom:1rem;
-}
-#header-home .header-content p {
-  font-size: 1rem;
-  line-height: 1.2;
-  padding-bottom:1rem;
+a:active {
+    top: 1px;
 }
 
-.container {
-  max-width: 1280px;
-  padding: 0 1.5rem;
-  margin: auto;
-  overflow: hidden;
-  background-color: #373B44;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-ul {
-  list-style-type: none;
+footer p {
+    margin-left: 3%;
+    margin-top: 0.5%;
+    margin-bottom:  0.5%;
 }
 
-#placeholder {
-  min-height: 16vh;
+svg {
+    width: 4em;
+    height: 4em;
+    margin: 1em;
+    fill:aliceblue;
+}
+
+svg:hover {
+    opacity: 0.8;
 }
