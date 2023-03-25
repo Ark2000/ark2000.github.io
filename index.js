@@ -5,6 +5,7 @@ function getRndInteger(min, max) {
 }
 
 let colors = [
+    ["#39a8d1", "#ee6ca1", "#f5f5f5", "#ee6ca1", "#39a8d1", "#f5f5f5"],
     ["#f5f5f5", "#fe4b74", "#373b44", "#2d3139", "#f5f5f5", "#f5f5f5"],
     ["#f5f5f5", "#ffa101", "#31525b", "#2B4850", "#f5f5f5", "#f5f5f5"],
     ["#084b83", "#ff66b3", "#f0f6f6", "#E6F0F0", "#084b83", "#191919"],
