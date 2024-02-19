@@ -35,7 +35,7 @@ window.onload = function(){
 		for(var i=0;i<boids.length;i++) boids[i].update();
 		updateCanvasSize();
 	};
-	setInterval(update,1000/30);
+	setInterval(update,1000/60);
 	update();
 
 	// RAF
