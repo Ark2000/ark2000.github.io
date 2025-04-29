@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --font-heading: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --font-code: 'Fira Code', 'Courier New', Courier, monospace;
+
+    --color-primary: #6e8efb;
+    --color-secondary: #a777e3;
+    --color-text: #333;
+    --color-text-light: #666;
+    --color-background: #f8f9fa;
+    --transition-standard: 0.3s ease;
+}
+
+body {
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    overflow-x: hidden;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.card {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    z-index: 1;
+    transition: transform var(--transition-standard), opacity var(--transition-standard);
+}
+
+.card-content {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    z-index: 2;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.main-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: white;
+    letter-spacing: -0.5px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.subtitle {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.location {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-top: 1rem;
+}
+
+.contact-info a {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.5rem;
+    transition: color var(--transition-standard), transform var(--transition-standard);
+}
+
+.contact-info a:hover {
+    color: white;
+    transform: translateY(-3px);
+}
+
+.content {
+    position: relative;
+    background-color: white;
+    min-height: 100vh;
+    width: 100%;
+    padding: 2rem 0;
+    margin-top: 100vh;
+    z-index: 2;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* 添加内容容器，限制内容宽度 */
+.content-inner {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Markdown content styling */
+.content-inner h1 {
+    font-size: 2.2rem;
+    margin: 2rem 0 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f0f0f0;
+    color: #2c3e50;
+}
+
+.content-inner h1:first-child {
+    margin-top: 0;
+}
+
+.content-inner h2 {
+    font-size: 1.7rem;
+    margin: 1.8rem 0 1rem;
+    color: #3a4a5d;
+}
+
+.content-inner p {
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.content-inner ul {
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.content-inner li {
+    margin-bottom: 1rem;
+}
+
+.content-inner a {
+    color: #6e8efb;
+    text-decoration: none;
+}
+
+.content-inner a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .card-content {
+        padding: 1.5rem;
+    }
+
+    .main-title {
+        font-size: 2rem;
+    }
+
+    .content {
+        padding: 1.5rem 0;
+    }
+
+    .content-inner {
+        padding: 0 1.5rem;
+    }
+}
+
+/* 增加渐变文本的显示效果，确保在Safari等浏览器中也能正常显示 */
+.highlight-name {
+    position: relative;
+    font-weight: 800;
+    padding: 0 5px;
+    display: inline-block;
+
+    /* 主要效果：渐变色文本 */
+    background-image: linear-gradient(to right, #ffdd00, #ff5722);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+
+    /* 备用效果 */
+    color: white;
+    mix-blend-mode: normal;
+
+    /* 装饰效果 */
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* 更强的浏览器支持检测 */
+@supports ((background-clip: text) or (-webkit-background-clip: text)) and ((color: transparent) or (-webkit-text-fill-color: transparent)) {
+    .highlight-name {
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+/* Safari特定样式 */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .highlight-name {
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.highlight-name:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+    text-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* GUI Panel 样式优化 */
+.lil-gui {
+    --width: 280px;
+    font-family: var(--font-primary);
+    z-index: 9999 !important;
+}
+
+.lil-gui .title {
+    font-family: var(--font-heading);
+}
+
+@media (max-width: 768px) {
+    .lil-gui {
+        --width: 250px;
+        position: fixed !important;
+        bottom: 10px !important;
+        right: 10px !important;
+        top: auto !important;
+        left: auto !important;
+        max-height: 70vh;
+        overflow-y: auto;
+    }
+}
+
+/* Bing壁纸版权信息 */
+#bing-copyright {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.6);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* Footer styles */
+.site-footer {
+    position: relative;
+    background-color: white;
+    padding: 2rem 0;
+    margin-top: auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.footer-content {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+}
+
+.footer-content p {
+    margin: 0.5rem 0;
+}
+
+.footer-content i {
+    color: #ff6b6b;
+    margin: 0 0.2rem;
+}
+
+@media (max-width: 768px) {
+    .site-footer {
+        padding: 1.5rem 0;
+    }
+}
+
+
+.content-inner i.fas,
+.content-inner i.fab {
+    color: #2c3e50;
+    margin-right: 0.3em;
+    font-size: 1em;
+    vertical-align: middle;
+    transition: color 0.2s;
+}
